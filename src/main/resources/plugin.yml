@@ -1,0 +1,5 @@
+name: DisableElytraMovementCheck
+version: '1.0.0'
+main: winlyps.disableElytraMovementCheck.DisableElytraMovementCheck
+api-version: '1.20'
+authors: [ Winlyps ]
