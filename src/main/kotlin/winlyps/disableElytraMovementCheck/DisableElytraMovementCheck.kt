@@ -14,6 +14,9 @@ class DisableElytraMovementCheck : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("DisableElytraMovementCheck plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("disableElytraMovementCheck", "false")
+            logger.info("DisableElytraMovementCheck plugin has been disabled.")
+        }
     }
 }
